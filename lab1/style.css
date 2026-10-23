@@ -1,0 +1,56 @@
+.name {
+    color: lime;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.s1 {
+    background-color: blue;
+}
+
+.s2 {
+    background-color: blueviolet;
+}
+
+.s3 {
+    background-color: chocolate;
+}
+
+.s4 {
+    background-color: darkgreen;
+}
+
+.s5 {
+    background-color: deeppink;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px;
+}
