@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="icon" href="./img/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="page" id="start-page">
+            <h1>Minesweeper</h1>
+            <div class="board-size-selection" id="board-size-selection">
+                <h2>Difficulty level</h2>
+                <div class="board-size-selector">
+                    <button value="0">
+                        <span>9x9</span>
+                        <span>Easy</span>
+                    </button>
+                    <button value="1">
+                        <span>16x16</span>
+                        <span>Medium</span>
+                    </button>
+                    <button value="2">
+                        <span>30x16</span>
+                        <span>Expert</span>
+                    </button>
+                </div>
+            </div>
+            <button class="action play">Play</button>
+            <button class="action leaderboard">Leaderboard</button>
+        </div>
+        <div class="page" id="board-page">
+            <div id="stats">
+                <h2 id="mines-left">Mines left: <span></span></h2>
+                <h2 id="time">Time: <span></span></h2>
+            </div>
+            <div id="board">
+                
+            </div>
+            <h2 id="message"></h2>
+            <div id="navigation">
+                <button class="action main-menu">Main menu</button>
+                <button class="action leaderboard">Leaderboard</button>
+            </div>
+        </div>
+        <div class="page" id="leaderboard-page">
+            <h1>Leaderboard</h1>
+            <div class="board-size-selection" id="leaderboard-board-size-selection">
+                <h2>Difficulty level</h2>
+                <div class="board-size-selector">
+                    <button value="0">
+                        <span>9x9</span>
+                        <span>Easy</span>
+                    </button>
+                    <button value="1">
+                        <span>16x16</span>
+                        <span>Medium</span>
+                    </button>
+                    <button value="2">
+                        <span>30x16</span>
+                        <span>Expert</span>
+                    </button>
+                </div>
+            </div>
+            <ol id="leaderboard-list">
+
+            </ol>
+            <button class="action main-menu">Main menu</button>
+        </div>
+    </div>
+</body>
+</html>
